@@ -1,0 +1,55 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+ 
+# Backup files #
+*.bak
+*.py[cod]
+*$py.class
+
+# Distribution / packaging #
+
+.Python build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+
+# Compiled source #
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.sage.py 
+
+# Directory users #
+
+adcy/
+mysite/
+manage.py
