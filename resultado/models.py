@@ -7,7 +7,7 @@ class Examen(models.Model):
     descripcion = models.CharField(max_length=200)
     estado = models.CharField(max_length=200)
     costo = models.IntegerField()
-    id_cita = models.OneToOneField(Cita, on_delete=models.CASCADE)
+    cita = models.OneToOneField(Cita, on_delete=models.CASCADE)
 	
 	
 	

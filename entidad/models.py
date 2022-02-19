@@ -6,7 +6,7 @@ class Hospital(models.Model):
     adress = models.CharField(max_length=200)
 
 class Especialidad(models.Model):
-    id_hostpital = models.ManyToManyField(Hospital)
+    hostpital = models.ForeignKey(Hospital, on_delete=models.CASCADE)
     especialidad = models.CharField(max_length=30)
     estado = models.CharField(max_length=30)
 
@@ -15,6 +15,6 @@ class Medico(models.Model):
     apellido = models.CharField(max_length=200)
     telefone = models.IntegerField()
     estado = models.CharField(max_length=200)
-    id_especialidad = models.ForeignKey(Especialidad, on_delete=models.CASCADE)
+    especialidad = models.ForeignKey(Especialidad, on_delete=models.CASCADE)
 	
 	

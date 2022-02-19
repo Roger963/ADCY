@@ -10,7 +10,7 @@ class Paciente(models.Model):
     address = models.CharField(max_length=200)
 
 class SintomasPaciente(models.Model):
-    id_paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE)
+    paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE)
     sintomas = models.CharField(max_length=200)
     descripcion = models.CharField(max_length=200)
     discapacidad = models.BooleanField(default=False)
@@ -19,8 +19,8 @@ class SintomasPaciente(models.Model):
     
 
 class Cita(models.Model):
-    id_paciente = models.ForeignKey(Paciente, on_delete=Delete)
-    id_medico = models.OneToOneField(Medico, on_delete=models.CASCADE)
+    paciente = models.ForeignKey(Paciente, on_delete=Delete)
+    medico = models.OneToOneField(Medico, on_delete=models.CASCADE)
     turno = models.IntegerField()
     fecha = models.DateTimeField(auto_now_add=True)
     estado = models.CharField(max_length=200)
