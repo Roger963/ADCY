@@ -1,6 +1,4 @@
 from django.contrib import admin
-
-from .models import Examen, ExamenPaciente
+from .models import Examen
 
 admin.site.register(Examen)
-admin.site.register(ExamenPaciente)

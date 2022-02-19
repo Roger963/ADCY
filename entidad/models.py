@@ -1,3 +1,4 @@
+	
 from django.db import models
 
 class Hospital(models.Model):
@@ -5,6 +6,7 @@ class Hospital(models.Model):
     adress = models.CharField(max_length=200)
 
 class Especialidad(models.Model):
+    id_hostpital = models.ManyToManyField(Hospital)
     especialidad = models.CharField(max_length=30)
     estado = models.CharField(max_length=30)
 
@@ -13,5 +15,6 @@ class Medico(models.Model):
     apellido = models.CharField(max_length=200)
     telefone = models.IntegerField()
     estado = models.CharField(max_length=200)
-    id_hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE)
     id_especialidad = models.ForeignKey(Especialidad, on_delete=models.CASCADE)
+	
+	
