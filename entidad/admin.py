@@ -1,7 +1,17 @@
-from re import M
 from django.contrib import admin
-from .models import Hospital, Especialidad, Medico
+from entidad.models import Hospital, Medico, Especialidad
+class MedicoAdmin(admin.ModelAdmin):
+    list_display = ('name', 'apellido')
+class HospitalAdmin(admin.ModelAdmin):
+    list_display = ('sucursal','adress')
+class EspecialidadAdmin(admin.ModelAdmin):
+    pass
 
-admin.site.register(Hospital)
+admin.site.register(Medico, MedicoAdmin)
 admin.site.register(Especialidad)
-admin.site.register(Medico)
+admin.site.register(Hospital, HospitalAdmin)
+
+
+
+
+
