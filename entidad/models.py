@@ -2,8 +2,11 @@
 from django.db import models
 
 class Hospital(models.Model):
-    sucursal = models.CharField(max_length=200)
-    adress = models.CharField(max_length=200)
+    sucursal = models.CharField(max_length=200, verbose_name='Centro Medico')
+    adress = models.CharField(max_length=200, verbose_name='La direccion')
+
+    def __str__(self):
+        return (self.sucursal)
 
 class Especialidad(models.Model):
     hostpital = models.ForeignKey(Hospital, on_delete=models.CASCADE)
