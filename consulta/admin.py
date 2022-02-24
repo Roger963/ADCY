@@ -1,11 +1,11 @@
 from django.contrib import admin
 from .models import Paciente, SintomasPaciente, Cita
 class PacienteAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name', 'apellido', 'telefono', 'address')
 class SintomasPacienteAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('sintomas', 'descripcion','discapacidad','tipoDescapacidad')
 class CitaAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('paciente', 'medico','turno','turno','fecha','estado')
 admin.site.register(Paciente)
 admin.site.register(SintomasPaciente)
 admin.site.register(Cita)
