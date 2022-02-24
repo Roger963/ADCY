@@ -4,6 +4,7 @@ class MedicoAdmin(admin.ModelAdmin):
     list_display = ('name', 'apellido')
 class HospitalAdmin(admin.ModelAdmin):
     list_display = ('sucursal','adress')
+    search_fiels=('sucursal')
 class EspecialidadAdmin(admin.ModelAdmin):
     pass
 

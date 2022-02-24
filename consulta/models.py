@@ -9,6 +9,9 @@ class Paciente(models.Model):
     cedula = models.IntegerField()
     address = models.CharField(max_length=200)
 
+    def __str__(self):
+        return self.name
+
 class SintomasPaciente(models.Model):
     paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE)
     sintomas = models.CharField(max_length=200)
@@ -16,6 +19,9 @@ class SintomasPaciente(models.Model):
     discapacidad = models.BooleanField(default=False)
     tipoDescapacidad = models.CharField(max_length=200)
     grupSanguineo = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.sintomas
     
 
 class Cita(models.Model):
@@ -24,4 +30,7 @@ class Cita(models.Model):
     turno = models.IntegerField()
     fecha = models.DateTimeField(auto_now_add=True)
     estado = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.turno
 	
