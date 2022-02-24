@@ -5,7 +5,7 @@ class MedicoAdmin(admin.ModelAdmin):
 class HospitalAdmin(admin.ModelAdmin):
     list_display = ('sucursal','adress')
 class EspecialidadAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('especialidad','estado')
 
 admin.site.register(Medico, MedicoAdmin)
 admin.site.register(Especialidad)
