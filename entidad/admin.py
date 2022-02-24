@@ -8,7 +8,7 @@ class EspecialidadAdmin(admin.ModelAdmin):
     list_display = ('especialidad','estado')
 
 admin.site.register(Medico, MedicoAdmin)
-admin.site.register(Especialidad)
+admin.site.register(Especialidad, EspecialidadAdmin)
 admin.site.register(Hospital, HospitalAdmin)
 
 

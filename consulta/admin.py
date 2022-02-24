@@ -7,5 +7,5 @@ class SintomasPacienteAdmin(admin.ModelAdmin):
 class CitaAdmin(admin.ModelAdmin):
     list_display = ('paciente', 'medico','turno','turno','fecha','estado')
 admin.site.register(Paciente, PacienteAdmin)
-admin.site.register(SintomasPaciente)
-admin.site.register(Cita)
+admin.site.register(SintomasPaciente, SintomasPacienteAdmin)
+admin.site.register(Cita, CitaAdmin)

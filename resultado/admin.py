@@ -3,4 +3,4 @@ from .models import Examen
 
 class ExamenAdmin(admin.ModelAdmin):
     pass    
-admin.site.register(Examen)
+admin.site.register(Examen, ExamenAdmin)
