@@ -10,7 +10,7 @@ class Examen(models.Model):
     cita = models.OneToOneField(Cita, on_delete=models.CASCADE, verbose_name="Cita")
 
     def __str__(self):
-        return self.descripcion
+       return str(self.descripcion)
 	
 	
 	

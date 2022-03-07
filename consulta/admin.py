@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Paciente, SintomasPaciente, Cita
 class PacienteAdmin(admin.ModelAdmin):
-    list_display = ('name', 'apellido', 'telefono', 'address')
+    list_display = ('name', 'apellido', 'telefono', 'address')  
 class SintomasPacienteAdmin(admin.ModelAdmin):
     list_display = ('sintomas', 'descripcion','discapacidad','tipoDescapacidad')
 class CitaAdmin(admin.ModelAdmin):
