@@ -82,10 +82,10 @@ DATABASES = {
         'OPTIONS': {
             'options': '-c search_path=adcy'
         },
-        'NAME': 'postgres',
+        'NAME': 'adcy',
         'USER': 'postgres',
-        'PASSWORD': '3991',
-        'HOST': '192.168.1.30',
+        'PASSWORD': '1234',
+        'HOST': '192.168.100.6',
         'PORT': '5432',
     }
 }
