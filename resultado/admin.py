@@ -2,5 +2,5 @@ from django.contrib import admin
 from .models import Examen
 
 class ExamenAdmin(admin.ModelAdmin):
-    pass    
-admin.site.register(Examen)
+    list_display = ('descripcion', 'estado', 'cita', 'costo')   
+admin.site.register(Examen, ExamenAdmin)
