@@ -9,9 +9,6 @@ class Hospital(models.Model):
 
 
 
-    def __str__(self):
-        return self.sucursal
-
 class Especialidad(models.Model):
     hostpital = models.ForeignKey(Hospital, on_delete=models.CASCADE)
     especialidad = models.CharField(max_length=30, verbose_name="La especialidad")
