@@ -82,10 +82,10 @@ DATABASES = {
         'OPTIONS': {
             'options': '-c search_path=adcy'
         },
-        'NAME': 'adcy',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': '192.168.100.6',
+        'PASSWORD': '1225k',
+        'HOST': '192.168.100.97',
         'PORT': '5432',
     }
 }
@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-es'
 
 TIME_ZONE = 'UTC'
 
