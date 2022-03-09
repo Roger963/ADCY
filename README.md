@@ -10,4 +10,8 @@ Agendación de citas medicas Yavirac
 DATABASES
 INSTALLED_APPS
 
+CARACTERISTICAS
+1. Diagrama de aplicaciones
+
+
 ##Para la guia debe seguir el siguiente manual
