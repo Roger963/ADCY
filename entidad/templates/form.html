@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+    <title>Busqueda de paciente</title>
+
+
+</head>
+
+<body>
+    Hola mundo
+
+<form action="/Buscar/" method="GET">
+
+    <input type="text" name="paciente">
+    <input type="submit" value="Buscar">
+
+</form>
+
+<section>
+{ % if medicos_list % }
+    <ul>
+        {% for i in medicos_list}
+    </ul>
+</section>
+</body>
+
+
+
+
+
+</html>
