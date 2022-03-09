@@ -1,7 +1,7 @@
 # ADCY
 Agendación de citas medicas Yavirac
 
-##Para ejecutar localmente, haga lo habitual:
+## Para ejecutar localmente, haga lo habitual:
 1. Crear un entorno virtual de Python
 2. Instalar dependencias:
   pip install -r requirements.txt
@@ -20,3 +20,5 @@ CARACTERISTICAS
  ![alt text](https://github.com/Roger963/ADCY/blob/d3e3dbd5f6ddcc1672d9536df0621f0886523eac/media/diagrama%20de%20modelado.jpg)
 
 ##Para la guia debe seguir el siguiente manual
+=======
+## Para la guia debe seguir el siguiente manual
