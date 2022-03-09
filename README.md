@@ -12,6 +12,7 @@ INSTALLED_APPS
 
 CARACTERISTICAS
 1. Diagrama de aplicaciones
+![alt text]()
 
 2. Diagrama de modelado
  ![alt text](https://github.com/Roger963/ADCY/blob/d3e3dbd5f6ddcc1672d9536df0621f0886523eac/media/diagrama%20de%20modelado.jpg)
