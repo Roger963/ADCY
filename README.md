@@ -10,4 +10,11 @@ Agendación de citas medicas Yavirac
 DATABASES
 INSTALLED_APPS
 
-## Para la guia debe seguir el siguiente manual
+CARACTERISTICAS
+
+1. Diagrama de aplicaciones
+
+![alt text](https://github.com/Roger963/ADCY/blob/a7dbef9e5bc401d79ec412d04d80bccab4811a6f/media/modelo%20de%20aplicaciones.jpeg)
+
+2. Diagrama de modelado
+ ![alt text](https://github.com/Roger963/ADCY/blob/d3e3dbd5f6ddcc1672d9536df0621f0886523eac/media/diagrama%20de%20modelado.jpg)

@@ -28,6 +28,5 @@ class Cita(models.Model):
     turno = models.IntegerField(verbose_name="Turno")
     fecha = models.DateTimeField(auto_now_add=True, verbose_name="Fecha")
     estado = models.CharField(max_length=200, verbose_name="Estado")
-    def __str__(self):
-        return self.paciente
+   
 	
