@@ -1,7 +1,7 @@
 # ADCY
 Agendación de citas medicas Yavirac
 
-##Para ejecutar localmente, haga lo habitual:
+## Para ejecutar localmente, haga lo habitual:
 1. Crear un entorno virtual de Python
 2. Instalar dependencias:
   pip install -r requirements.txt
@@ -10,4 +10,4 @@ Agendación de citas medicas Yavirac
 DATABASES
 INSTALLED_APPS
 
-##Para la guia debe seguir el siguiente manual
+## Para la guia debe seguir el siguiente manual
